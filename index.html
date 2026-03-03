@@ -224,54 +224,15 @@
   <!-- QUOTE -->
 <!-- QUOTE -->
 <section id="quote" class="section quote">
+
   <div class="container">
 
     <div class="section-head center">
       <h2>Request Service</h2>
       <p>Fill out the form and we will contact you shortly.</p>
     </div>
-
-    <form class="quote-form" name="quote" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="quote">
-
-      <div class="field-grid">
-
-        <div class="field">
-          <label for="name">Full Name / Company Name *</label>
-          <input id="name" name="name" type="text" required minlength="3" placeholder="John Smith or ABC Property Management">
-        </div>
-
-        <div class="field">
-          <label for="email">Email *</label>
-          <input id="email" name="email" type="email" required placeholder="you@email.com">
-        </div>
-
-        <div class="field">
-          <label for="phone">Phone Number *</label>
-          <input id="phone" name="phone" type="tel" required pattern="[0-9\-\+\(\)\s]{10,}" placeholder="647-123-4567">
-        </div>
-
-        <div class="field">
-          <label for="service">Service Needed *</label>
-          <select id="service" name="service" required>
-            <option value="">Select</option>
-            <option>Repair</option>
-            <option>Installation</option>
-            <option>Maintenance</option>
-            <option>Commercial Service</option>
-          </select>
-        </div>
-
-      </div>
-
-      <div class="field">
-        <label for="message">Describe the Problem *</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-
-      <button class="btn btn-quote btn-lg" type="submit">Send Request</button>
-
-    </form>
+    <form class="quote-form" action="https://formspree.io/f/xreadnnw" method="POST">
+      <input type="hidden" name="_next" value="thanks.html">
 
   </div>
 </section>

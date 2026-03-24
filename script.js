@@ -1,3 +1,12 @@
+ // offer switch (false to turn off)
+const offerEnabled = true;
+if (!offerEnabled) {
+  document.getElementById("offers").style.display = "none";
+} else {
+  tick();
+  setInterval(tick, 1000);
+}
+
 const burgerBtn = document.getElementById("burgerBtn");
 const menu = document.getElementById("menu");
 
@@ -18,9 +27,8 @@ if (burgerBtn && menu) {
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Countdown (7 days from first load)
-const promoEnd = new Date();
-promoEnd.setDate(promoEnd.getDate() + 7);
+// End of Offer
+const promoEnd = new Date("2026-04-01T23:59:59");
 
 function tick() {
   const now = new Date();
@@ -43,6 +51,10 @@ function tick() {
   if (hh) hh.textContent = pad(hours);
   if (mm) mm.textContent = pad(mins);
   if (ss) ss.textContent = pad(secs);
+  document.getElementById("offers").style.opacity = "0";
+  setTimeout(() => {
+  document.getElementById("offers").style.display = "none";
+  }, 500);
 }
 
 tick();

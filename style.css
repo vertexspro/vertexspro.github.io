@@ -28,10 +28,20 @@ body{
 .section-head.center{ text-align:center; }
 .section-head h2{ margin:0 0 10px; font-size:34px; letter-spacing:-.02em; }
 .section-head p{ margin:0; color:var(--muted); }
-.logo{
-  height: 42px;
+.brand {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.logo {
+  height: 48px;
   width: auto;
-  object-fit: contain;
+}
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Buttons */
@@ -54,7 +64,11 @@ body{
 .btn-quote{ background:var(--quote); color:#fff; }
 .btn-quote:hover{ background:#ff8a1f; }
 
-.btn-call{ background:var(--call); color:#052e16; }
+.btn-call {
+  background: #22c55e;
+  color: #052e16;
+  font-weight: 800;
+}
 .btn-call:hover{ background:#38d26f; }
 
 .btn-ghost{
@@ -232,6 +246,9 @@ body{
 .band h2{ margin:0 0 10px; font-size:30px; letter-spacing:-.02em; }
 .band p{ margin:0 0 14px; color:rgba(255,255,255,.90); }
 .fineprint{ margin-top:10px; font-size:12px; color:rgba(255,255,255,.78); }
+#offers {
+  transition: opacity 0.5s ease;
+}
 
 .countdown{
   display:flex;
@@ -361,7 +378,7 @@ body{
 .review p{ margin:0; color:#334155; }
 @media (max-width: 980px){ .review-grid{ grid-template-columns:1fr; } }
 
-/* Quote form (Google Form iframe) */
+/* Quote form */
 .section.quote{ background: linear-gradient(180deg, #ffffff, #f8fafc); }
 .form-wrap{
   background:#fff;

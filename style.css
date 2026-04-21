@@ -105,10 +105,7 @@ body{
 
 .btn-call{
   background:var(--call);
-  .btn-call{
-    background:var(--call);
-    color:#fff;
-  }
+  color:#fff;
 }
 
 .btn-quote{

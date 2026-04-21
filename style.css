@@ -5,7 +5,7 @@
   --brand:#0f62fe;
   --brand2:#0b4bd4;
   --quote:#ff8700;
-  --call:#34d06c;
+  --call:#ff0000;
   --shadow:0 10px 30px rgba(2, 6, 23, 0);
   --radius:18px;
 }
@@ -105,7 +105,10 @@ body{
 
 .btn-call{
   background:var(--call);
-  color:#062b14;
+  .btn-call{
+    background:var(--call);
+    color:#fff;
+  }
 }
 
 .btn-quote{
